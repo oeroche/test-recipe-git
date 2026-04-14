@@ -1,9 +1,9 @@
-from harmony_client.runtime import recipe_main
+from harmony_client.runtime import recipe_main, InputConfig
 from pydantic import BaseModel
 from harmony_client.runtime import RecipeContext
 
 
-class Config(BaseModel):
+class Config(InputConfig):
     name: str
     age: int
 
