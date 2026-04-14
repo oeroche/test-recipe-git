@@ -1,5 +1,5 @@
 from harmony_client.runtime import recipe_main, InputConfig
-from pydantic import BaseModel
+from pydantic import InputConfig
 from harmony_client.runtime import RecipeContext
 
 
