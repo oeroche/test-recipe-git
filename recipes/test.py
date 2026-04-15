@@ -13,7 +13,7 @@ class ConfigBis(InputConfig):
 
 
 @recipe_main
-def main(config: ConfigBis, ctx: RecipeContext):
+def main(config: Config, ctx: RecipeContext):
     print(f"Hello {config.name}! You are {config.age} years old.")
 
 
