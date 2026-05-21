@@ -20,3 +20,8 @@ def main(config: MyConfig, ctx: RecipeContext):
 @recipe(name="My named Recipe", description="A recipe I named")
 def other(config: MyOtherConfig, ctx: RecipeContext):
     print(f"Hello user from {config.country}! You are {config.int} tall.")
+
+
+@recipe(name="My Other Named recipe", description="A recipe I named")
+def test(config: MyOtherConfig, ctx: RecipeContext):
+    print(f"Hello user from {config.country}! You are {config.int} tall.")
