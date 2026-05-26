@@ -11,17 +11,6 @@ class MyOtherConfig(InputConfig):
     country: str
     size: int
 
-
-@recipe
-def main(config: MyConfig, ctx: RecipeContext):
-    print(f"Hello {config.name}! You are {config.age} years old.")
-
-
-@recipe(name="My named Recipe", description="A recipe I named")
-def other(config: MyOtherConfig, ctx: RecipeContext):
-    print(f"Hello user from {config.country}! You are {config.int} tall.")
-
-
-@recipe(name="My Other Named recipe", description="A recipe I named")
-def test(config: MyOtherConfig, ctx: RecipeContext):
+@recipe(name="My Main Recipe", description="The main recipe")
+def main(config: MyOtherConfig, ctx: RecipeContext):
     print(f"Hello user from {config.country}! You are {config.int} tall.")
