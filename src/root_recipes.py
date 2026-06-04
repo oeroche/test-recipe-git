@@ -11,6 +11,6 @@ class MyOtherConfig(InputConfig):
     country: str
     size: int
 
-@recipe(name="My Main Recipe", description="The main recipe")
+@recipe(name="my_main_recipe", description="The main recipe")
 def main(config: MyOtherConfig, ctx: RecipeContext):
     print(f"Hello user from {config.country}! You are {config.size}m tall.")
