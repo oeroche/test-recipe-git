@@ -14,7 +14,7 @@ class SumConfig(InputConfig):
     ]
 
 
-@recipe(name="avergae", description="Get the average of a list of numbers")
+@recipe(name="average", description="Get the average of a list of numbers")
 async def average(config: SumConfig, ctx: RecipeContext):
     grader = await config.grader.load(ctx)
     print("selected grader: ", grader.grader_key)
